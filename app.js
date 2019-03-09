@@ -16,9 +16,7 @@ User = require("./models/user");
 
 console.log(process.env.DATABASEURL);
 
-mongoose.connect(
-  "mongodb+srv://Pankhil:pankhil@cluster0-amthp.mongodb.net/yelp_camp?retryWrites=true"
-);
+mongoose.connect("process.env.DATABASEURL");
 
 const commentRoutes = require("./routes/comment");
 campgroundRoutes = require("./routes/camp");
