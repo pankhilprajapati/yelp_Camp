@@ -13,6 +13,9 @@ passportLocalMong = require("passport-local-mongoose");
 Camp = require("./models/campSchema");
 comment = require("./models/comment");
 User = require("./models/user");
+
+console.log(process.env.DATABASEURL);
+
 mongoose.connect(
   "mongodb+srv://Pankhil:pankhil@cluster0-amthp.mongodb.net/yelp_camp?retryWrites=true"
 );
