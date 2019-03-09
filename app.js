@@ -14,9 +14,8 @@ Camp = require("./models/campSchema");
 comment = require("./models/comment");
 User = require("./models/user");
 
-console.log(process.env.DATABASEURL);
-
-mongoose.connect("process.env.DATABASEURL");
+var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp";
+mongoose.connect(url);
 
 const commentRoutes = require("./routes/comment");
 campgroundRoutes = require("./routes/camp");
