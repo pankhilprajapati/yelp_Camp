@@ -1,0 +1,77 @@
+<% include ./partial/header1%>
+<div class="container">
+  <div class="row">
+    <h1 style="text-align:center;">SignUP</h1>
+    <div style="width: 30%; margin:25px auto;">
+      <form action="/register" method="POST">
+        <div class="form-group">
+          <input
+            class="form-control"
+            type="text"
+            name="username"
+            placeholder="username"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            class="form-control"
+            type="password"
+            name="password"
+            placeholder="password"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            class="form-control"
+            type="text"
+            name="firstName"
+            placeholder="first name"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            class="form-control"
+            type="text"
+            name="lastName"
+            placeholder="last name"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            placeholder="email"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            class="form-control"
+            type="text"
+            name="avatar"
+            placeholder="avatar url"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            class="form-control"
+            type="text"
+            name="adminCode"
+            placeholder="admin code"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            class="btn btn-primary btn-lg btn-block"
+            style="margin-bottom: 25px;"
+            type="submit"
+            value="Sign UP!"
+          />
+        </div>
+      </form>
+      <a href="/">GO Back</a>
+    </div>
+  </div>
+</div>
+
+<% include ./partial/footer1%>

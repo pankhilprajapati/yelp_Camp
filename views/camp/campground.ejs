@@ -1,0 +1,48 @@
+<%include ../partial/header1 %>
+<style>
+  .caption h4 {
+    width: 100px;
+    margin: auto;
+  }
+  .caption p {
+    margin: 0 30%;
+  }
+  .thumbnail p {
+    margin: 0 30%;
+  }
+</style>
+<div class="container">
+  <header class="jumbotron">
+    <div class="container">
+      <h1>
+        <span class="glyphicon glyphicon-tent"></span>
+        Welcome to YelpCamp!
+      </h1>
+      <p>View our hand-picked campgounds from all over the world</p>
+      <p>
+        <a class="btn btn-primary btn-large" href="/campground/new"
+          >Add New Campground</a
+        >
+      </p>
+    </div>
+  </header>
+
+  <h2>This will be the campgounds page</h2>
+  <div class="row text-centered" style="display:flex; flex-wrap: wrap;">
+    <% campground.forEach((c)=>{%>
+    <div class="col-md-3 col-sm-6">
+      <div class="thumbnail">
+        <img src="<%= c.image%>" />
+        <div class="caption"><h4><%= c.name%></h4></div>
+        <p>
+          <a href="/campground/<%=c._id%>" class=" btn btn-primary"
+            >More Info</a
+          >
+        </p>
+      </div>
+    </div>
+    <%});%>
+  </div>
+</div>
+
+<% include ../partial/footer1 %>
