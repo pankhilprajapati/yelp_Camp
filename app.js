@@ -14,7 +14,7 @@ Camp = require("./models/campSchema");
 comment = require("./models/comment");
 User = require("./models/user");
 mongoose.connect(
-  "mongodb+srv://Pankhil:<password>@cluster0-amthp.mongodb.net/yelp_camp?retryWrites=true"
+  "mongodb+srv://Pankhil:pankhil@21@cluster0-amthp.mongodb.net/yelp_camp?retryWrites=true"
 );
 
 const commentRoutes = require("./routes/comment");
